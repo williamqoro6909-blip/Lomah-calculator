@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomah Pacific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</html>
+<body>
+
+</body>
+    <div class="card">
+        <h1>🚢 Lomah Pacific</h1>
+        <p>Door-to-Door NZ to Fiji Quote ($600/m³)</p>
+
+        <!-- Customer Details -->
+        <input type="text" id="customerName" placeholder="Customer Name">
+        <input type="text" id="fijiAddress" placeholder="Fiji Delivery Address">
+
+        <hr>
+
+        <!-- Cargo Measurements (in cm) -->
+        <input type="text" id="itemName" placeholder="Item (e.g., Blue Drum, Fridge)">
+        <input type="number" id="length" placeholder="Length (cm)">
+        <input type="number" id="width" placeholder="Width (cm)">
+        <input type="number" id="height" placeholder="Height (cm)">
+        <input type="number" id="qty" value="1" placeholder="Quantity">
+
+        <!-- Button that triggers your JavaScript math -->
+        <button onclick="addItem()">+ Add Item to Quote</button>
+
+        <!-- Empty list where JavaScript will insert added items -->
+        <ul id="itemList"></ul>
+
+        <!-- Empty text box where JavaScript will show the final total -->
+        <h2 id="totalDisplay">Total: $0.00 NZD</h2>
+    </div>
+
+    <!-- Connects your JavaScript file at the bottom -->
+    <script src="script.js"></script>
+</body>
+</html>
